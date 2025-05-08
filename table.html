@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhishma Institute Section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #333;
+     
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .content h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .content ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .content ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .content ul li::before {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: green;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+
+    .read-more {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #00754a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .read-more:hover {
+      background-color: #005f3b;
+    }
+
+    .image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* MEDIA QUERIES */
+    @media (max-width: 992px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content, .image {
+        text-align: center;
+      }
+
+      .content h2 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .content h2 {
+        font-size: 24px;
+      }
+
+      .content p, .content ul li {
+        font-size: 15px;
+      }
+
+      .read-more {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content h2 {
+        font-size: 20px;
+      }
+
+      .content p, .content ul li {
+        font-size: 14px;
+      }
+    }
+
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .cbse-header {
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+  }
+  <!-- Top Bar-->
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #3e52c2 !important; /* Black background */
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+  }
+  
+  .left-section,
+  .right-section {
+    display: flex;
+    align-items: center;
+    flex: 1 1 50%;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .left-section .emblem {
+    width: 24px;
+    height: auto;
+  }
+  
+  .right-section a,
+  .right-section button,
+  .right-section i {
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .font-size-controls button {
+    margin-right: 4px;
+    color: #fff;
+  }
+  
+  .active-font {
+    border: 1px solid #fff;
+    padding: 2px 5px;
+  }
+  
+  .social-icons i {
+    margin: 0 2px;
+  }
+  
+  /* Responsive Layouts */
+  @media (max-width: 768px) {
+    .top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .left-section,
+    .right-section {
+      flex: 1 1 100%;
+      justify-content: space-between;
+      padding: 6px 0;
+    }
+  
+    .left-section span {
+      font-size: 13px;
+    }
+  
+    .right-section {
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+  
+    .font-size-controls,
+    .screen-reader {
+      display: none; /* Hide on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-icons i {
+      font-size: 16px;
+    }
+  
+    .right-section i {
+      font-size: 14px;
+    }
+  }
+  
+  .top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  .title h1 {
+    font-size: 20px;
+    color: #0c339e;
+    font-weight: bold;
+  }
+
+  .title p {
+    font-size: 12px;
+    color: #007ca8;
+  }
+
+  .top-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .top-icons img {
+    height: 40px;
+    max-width: 80px;
+  }
+
+  .navbar {
+    background-color: #3e52c2;
+    color: white;
+  }
+
+ 
+
+  #nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #nav-menu li {
+    position: relative;
+  }
+
+  #nav-menu > li {
+    margin: 0 15px;
+  }
+
+  #nav-menu a {
+    display: block;
+    padding: 15px 8px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+  }
+
+  #nav-menu li:hover > ul {
+    display: block;
+  }
+
+  /* Dropdown Styles */
+  #nav-menu li ul {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    z-index: 1000;
+  }
+
+  #nav-menu li ul li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+  }
+
+  #nav-menu li ul li a:hover {
+    background-color: #222;
+  }
+
+  /* Mobile menu toggle */
+  .menu-toggle {
+    display: none;
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    #nav-menu {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+    }
+    #nav-menu li {
+      text-align: center;
+      margin: 0;
+      background-color: rgb(139, 139, 139); /* ← this line sets li background to black */
+    }
+  
+    #nav-menu li {
+      text-align: center;
+     
+      margin: 0;
+    }
+
+    #nav-menu li ul {
+      position: static;
+      
+    }
+
+    #nav-menu.show {
+      display: flex;
+    }
+  }
+
+
+  /* Hamburger menu styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+  }
+
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .hamburger {
+      display: flex;
+      margin-left: auto;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      padding: 0;
+      display: none;
+      width: 100%;
+      background-color: #f7f7f7;
+    }
+
+    .navbar ul.show {
+      display: flex;
+    }
+
+    .navbar li {
+      width: 100%;
+      border-top: 1px solid #ddd;
+    }
+
+    .navbar li a {
+      display: block;
+      color: #000000;
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }
+
+
+
+  
+
+  .admission-banner {
+    background-color: #00695c; /* Dark green */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: #014e90; /* Optional pattern */
+    background-repeat: repeat;
+  }
+
+  .admission-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .call-button {
+    background-color: #ff5c00;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .call-button:hover {
+    background-color: #e04f00;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .admission-banner {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .admission-text {
+      font-size: 1.5rem;
+    }
+
+    .call-button {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .admission-text {
+      font-size: 1.3rem;
+    }
+
+    .call-button {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+
+
+
+  footer {
+    background-color: #000000;
+    padding: 50px 20px;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer-logo, .footer-address, .footer-links, .footer-newsletter {
+    flex: 1 1 250px;
+    margin: 20px;
+  }
+  .footer-logo img {
+    width: 120px;
+  }
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .footer-address p,
+  .footer-links a,
+  .footer-newsletter p {
+    margin: 8px 0;
+    color: #ccc;
+    font-size: 14px;
+  }
+  .footer-links a {
+    display: block;
+    text-decoration: none;
+  }
+  .newsletter-input {
+    display: flex;
+    margin-top: 10px;
+  }
+  .newsletter-input input {
+    padding: 10px;
+    border: 1px solid #555;
+    border-right: none;
+    flex: 1;
+    outline: none;
+  }
+  .newsletter-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #01796f;
+    color: white;
+    cursor: pointer;
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 992px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-logo, .footer-address, .footer-links, .footer-newsletter {
+      margin: 10px 0;
+    }
+    .newsletter-input {
+      flex-direction: column;
+    }
+    .newsletter-input input,
+    .newsletter-input button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+ 
+
+
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .content ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  .content ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  .content ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: green;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+
+  .read-more {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00754a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+
+  .read-more:hover {
+    background-color: #005f3b;
+  }
+
+  .image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  .image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  /* MEDIA QUERIES */
+  @media (max-width: 992px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .content, .image {
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content h2 {
+      font-size: 24px;
+    }
+
+    .content p, .content ul li {
+      font-size: 15px;
+    }
+
+    .read-more {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content h2 {
+      font-size: 20px;
+    }
+
+    .content p, .content ul li {
+      font-size: 14px;
+    }
+  }
+
+
+
+  table { 
+	width: 750px; 
+   
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+  </style>
+</head>
+
+  <!-- Top Bar-->
+  <header1 class="top">
+    <div class="left-section">
+      <img src="images/SMJW.png" alt="India Emblem" class="emblem" />
+      <span><strong>Government of India</strong> | Central Board of Secondary Education</span>
+    </div>
+    <div class="right-section">
+      <a href="#" class="skip-link">Skip to main content</a>
+      <div class="font-size-controls">
+        <button>A<sup>+</sup></button>
+        <button>A</button>
+        <button>A<sup>-</sup></button>
+      </div>
+      <button class="active-font">A</button>
+      <a href="#" class="lang">हिन्दी</a>
+      <button class="screen-reader">
+        <i class="fas fa-volume-up"></i> Screen Reader Access
+      </button>
+      <div class="social-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <i class="fas fa-search"></i>
+    </div>
+  </header1>
+  <!-- Top Bar end-->
+<header class="cbse-header" >
+<div class="top-bar">
+  <div class="logo">
+    <img src="images/ODLC letter head (2).png" alt="CBSE Logo" />
+    <div class="title">
+      <h1>OPEN AND DISTANCE </h1>
+      <h1>LEARNING COUNCIL</h1>
+      
+    </div>
+  </div>
+  <div class="top-icons">
+    <img src="images/g20-logo.png" alt="G20" />
+    <img src="images/digitalcbselogo.png" alt="Amrit Mahotsav" />
+    <img src="images/g20-logo.png" alt="Swachh Bharat" />
+
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div class="navbar">
+
+  <ul id="nav-menu">
+    <li><a href="index.html">HOME</a></li>
+    <li>
+      <a href="#">ABOUT ODLC</a>
+      <ul>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="mission.html">Mission</a></li>
+      
+      </ul>
+    </li>
+    <li><a href="#">GOVERNANCE</a>
+      <ul>
+        <li><a href="table.html">Governing Council</a></li>
+      <li><a href="#">Academic Council</a></li>
+      <li><a href="#">Administrative Structure</a></li>
+    </ul>
+    </li>
+    <li>
+      <a href="#">COURSES</a>
+     
+    </li>
+    <li><a href="#">RESULTS</a>
+      <ul>
+        <li><a href="Download Result .html">View/Download Result </a></li>
+      <li><a href="Re-evaluation Request.html">Re-evaluation Request </a></li>
+      <li><a href="Result Notifications.html">Result Notifications</a></li>
+    </ul>
+    </li>
+    <li>
+      <a href="#">STUDENT PORTAL</a>
+    <ul>
+      <li><a href="#">Login / Dashboard</a></li>
+      <li><a href="#">Download ID Card</a></li>
+      <li><a href="#">Study Materials / E-Content</a></li>
+      <li><a href="#">Syllabus & Curriculum</a></li>
+      <li><a href="#">Raise a Support Ticket</a></li>
+    </ul>
+  </li>
+    <li><a href="#">AFFILIATED INSTITUTIONS</a></li>
+    <li><a href="#">RECOGNITION</a></li>
+    <li><a href="#">CONTACT US</a></li>
+  </ul>
+</div>
+</header>
+
+<body>
+    <h1 style="text-align: center;padding-top: 100px;">Governing Council – Open and Distance Learning Council (ODLC)</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>S. No</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Office Phone No</th>
+            <th>Email ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-column="First Name">1.</td>
+            <td data-column="Last Name">Mr. Nagulapalli Venkat Shiv Kumar</td>
+            <td data-column="Job Title">President</td>
+            <td data-column="Twitter">+91-11-22010950, 
+                +91-9716667733
+                </td>
+                <td data-column="Job Title">president[at]odlc[dot]ac[dot]in</td>
+          </tr>
+          <tr>
+            <td data-column="First Name">2.</td>
+            <td data-column="Last Name">Ms. Nidhi Baliyan</td>
+            <td data-column="Job Title">Secretary</td>
+            <td data-column="Twitter">+91-11-22010950 (Ext. 102)</td>
+            <td data-column="Job Title">secretary[at]odlc[dot]ac[dot]in</td>
+          </tr>
+          <tr>
+            <td data-column="First Name">3.</td>
+            <td data-column="Last Name">Mr. Praveen Goyal</td>
+            <td data-column="Job Title">Treasurer</td>
+            <td data-column="Twitter">+91-11-22010950 (Ext. 103)</td>
+            <td data-column="Job Title">treasurer[at]odlc[dot]ac[dot]in</td>
+          </tr>
+          <tr>
+            <td data-column="First Name">4.</td>
+            <td data-column="Last Name">Mrs. Anupam Singh</td>
+            <td data-column="Job Title">Director</td>
+            <td data-column="Twitter">+91-11-22010950 (Ext. 104)</td>
+            <td data-column="Job Title">director[at]odlc[dot]ac[dot]in</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+<footer >
+<div class="footer-container">
+<div class="footer-logo">
+  <img src="images/ODLC letter head (1).jpg" alt="Logo" />
+  <div class="social-icons">
+    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</div>
+<div class="footer-address">
+  <h3 style="color: white;">Address</h3>
+  <p >51-8-51/10, opp. DSR Function Hall,</p>
+  <p>Nakkavanipalem, Visakhapatnam, Andhra Pradesh 530013</p>
+  <p>📞 +91 79899 33789, +91 76720 34789</p>
+  <p>✉ info@bhishmajr.com</p>
+</div>
+<div class="footer-links">
+  <h3 style="color: white;">Quick Links</h3>
+  <a href="#">About Us</a>
+  <a href="#">Courses</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact Us</a>
+</div>
+<div class="footer-newsletter">
+  <h3>Newsletter</h3>
+  <p>Your email</p>
+  <div class="newsletter-input">
+    <input type="email" placeholder="Your email" />
+    <button>SignUp</button>
+  </div>
+</div>
+</div>
+<div class="footer-bottom">
+&copy; adXmedia, All Right Reserved.
+</div>
+</footer>
+</body>
+</html>
